@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/jungaretti/badgercoin/issues"
   },
-  "homepage": "https://github.com/jungaretti/badgercoin#readme"
+  "homepage": "https://github.com/jungaretti/badgercoin#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "typescript": "^4.2.2"
+  }
 }
