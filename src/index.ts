@@ -35,7 +35,12 @@ class Chain {
   chain: Block[];
 
   constructor() {
-    this.chain = [new Block("", new Transaction(515, "genesis", "jeff"))];
+    this.chain = [
+      new Block(
+        "",
+        new Transaction(515, "Supreme Leader Remzi H. Arpaci-Dusseau", "jimbo")
+      ),
+    ];
   }
 
   get lastBlock() {
@@ -105,13 +110,13 @@ class Wallet {
   }
 }
 
-const james = new Wallet();
-const keith = new Wallet();
+const jimbo = new Wallet();
 const steve = new Wallet();
-const caleb = new Wallet();
+const elliot = new Wallet();
+const keith = new Wallet();
 
-james.sendMoney(64, steve.publicKey);
-caleb.sendMoney(22, steve.publicKey);
+jimbo.sendMoney(64, steve.publicKey);
+elliot.sendMoney(22, steve.publicKey);
 steve.sendMoney(48, keith.publicKey);
 
 console.log(Chain.global);
